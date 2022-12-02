@@ -8,7 +8,7 @@ nav{
     margin: 20px 0px;
     margin-right: 5%;
     height: 11vh;
-    background-color: white;
+    background-color: var(--para);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -148,7 +148,7 @@ nav{
     }
 
     .sticky  ul  li a{
-        color: var(--secondary);
+        color: var(--para);
     }
 }
 
