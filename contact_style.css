@@ -76,3 +76,9 @@ ul li:hover a
     font-size: 3em;
     filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr)) drop-shadow(0 0 60px var(--clr));
 }
+section
+{
+    position:fixed; 
+    left:80px; 
+    top:20px;
+}
