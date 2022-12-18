@@ -17,8 +17,8 @@ body{
     height: 100vh;
 }
 .box{
-    width: 250px;
-    height: 250px;
+    width: 700px;
+    height: 700px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.288);
     border-radius: 23px;
     flex-direction: column;
