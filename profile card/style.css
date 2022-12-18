@@ -17,8 +17,8 @@ body{
     height: 100vh;
 }
 .box{
-    width: 700px;
-    height: 700px;
+    width: 500px;
+    height: 500px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.288);
     border-radius: 23px;
     flex-direction: column;
@@ -27,8 +27,8 @@ body{
     overflow: hidden;
 }
 .box img{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50px;
 }
 .user_name{
