@@ -82,3 +82,10 @@ section
     left:80px; 
     top:20px;
 }
+/* Mobile / Tablets */
+@media screen and (max-width:770px){
+    .body{
+        text-align: center;
+        /* border: 1px solid white; */
+    }
+   
