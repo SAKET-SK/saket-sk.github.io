@@ -32,10 +32,10 @@
 .icon:hover i{
     color: #fff;
 }
-.icon .fa-facebook-f{
+.icon .fa-envelope{
     color: #1A6ED8;
 }
-.fb:hover{
+.mail:hover{
     background: #1A6ED8;
 }
 .icon .fa-twitter{
