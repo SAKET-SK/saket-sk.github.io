@@ -10,97 +10,83 @@
   <link rel="stylesheet" href="styles/landing-page.css">
   <link rel="stylesheet" href="styles/Root-HTML.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-
 </head>
 
 <body>
 
-  <nav>
-    <div class="logo">
-      <img src="images/name_logo.PNG" alt="My LOGO">
-    </div>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="images/name_logo.PNG" alt="Saket Khopkar's Logo">
+      </div>
 
-    <div class="nav-container">
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="online.html">About Me</a></li>
-        <li><a href="team.html">Knowledege Base</a></li>
-        <li><a href="articles.html">Blog Posts</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
+      <div class="nav-container">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="online.html">About Me</a></li>
+          <li><a href="team.html">Knowledge Base</a></li>
+          <li><a href="articles.html">Blog Posts</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
 
-    <div class="mobile-menu">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
+      <div class="mobile-menu" aria-label="Mobile Menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
 
-  </nav>
-
-  <div class="container">
-
-    <!-- Landing Page -->
-    <div class="landing">
+  <main>
+    <section class="landing">
       <div class="title">
-        <h1>Saket Khopkar</h1>
-        <h2>Developer and Designer</h2>
+        <h1 style="color: white;">Saket Khopkar</h1>
+        <h2 style="color: white;">Developer and Designer</h2>
       </div>
 
-      <div class="descript">
-        <p>I solve problems in a bit creative way. During my tenure as a Diploma student, where I completed my junior
-          engineering years, I have learned many classical strategies that we can apply to modern-day projects which are
-          helpful in solving many real-world problems.</p>
+      <div class="descript" style="color: white;">
+        <p style="color: white; font-weight: bolder;">I solve problems in a creative way. During my tenure as a Diploma student, I learned many classical strategies
+          applicable to modern-day projects, helping to solve real-world problems.</p>
       </div>
 
-      <a href="online.html"><button class="buttons black">Read More</button></a>
-    </div>
+      <a href="online.html"><button class="buttons black">Tap Here to More</button></a>
+    </section>
 
-
-    <!--About us Tab-->
-    <div class="landing-events" id="aboutUS" name="aboutUS">
+    <section class="landing-events" id="aboutUS">
       <div class="about-us-img">
-        <img src="images/my-photo.jpg" alt="name-img">
+        <img src="images/my-photo.jpg" alt="Photo of Saket Khopkar">
       </div>
-
 
       <div class="text">
         <div class="title">
-          <h1>About me</h1>
+          <h1>About Me</h1>
           <div class="line"></div>
         </div>
 
         <div class="descript">
-          <p>I solve problems in a bit creative way. During my tenure as a Diploma student, where I completed my junior
-            engineering years, I have learned many classical strategies that we can apply to modern-day projects which
-            are helpful in solving many real-world problems.</p>
-          <p>An active learner, ready to learn new technologies and embrace them happily.
-            I have a team-building approach and I tend to work more creatively in a team as well as enjoying every
-            moment of work spent along with them.</p>
-          <a href="online.html"> <button class="buttons">Know More</button> </a>
+          <p>I solve problems creatively. During my tenure as a Diploma student, I learned classical strategies applicable to modern-day projects, solving real-world problems.</p>
+          <p>I'm an active learner, ready to embrace new technologies. I enjoy working in a team, fostering creativity and collaboration.</p>
+          <a href="online.html"><button class="buttons">Know More</button></a>
         </div>
-
       </div>
+    </section>
 
-    </div>
-    <!--Take a tour Tab-->
-    <div class="tour-section">
+    <section class="tour-section">
       <div class="text">
         <div class="title">
-          <h1>A video Introduction</h1>
+          <h1>A Video Introduction</h1>
           <div class="line"></div>
         </div>
       </div>
       <div class="video-container">
-        <video controls>
+        <video controls aria-label="Introduction Video">
           <source src="Portfolio_video.mp4" type="video/mp4">
         </video>
       </div>
-    </div>
+    </section>
 
-
-    <!-- Events Tab -->
-    <div class="landing-events">
+    <section class="landing-events">
       <div class="text">
         <div class="title">
           <h1>My Experience</h1>
@@ -108,68 +94,45 @@
         </div>
 
         <div class="descript">
-          <p>
-            Researching, designing, implementing, and managing software programs. Testing and evaluating new programs.
-            Identifying areas for modification in existing programs and subsequently developing these modifications.
-            Writing and implementing efficient code.</p>
-
-          <p>I posses a vey handy technical experience as well as practical experience in Software Industry. I have
-            worked on various development projects and problem statements with the use of Java, Html, Css, C# and C++. I
-            also love to follow and build some amazing things with the help of these languages with all the experience I
-            have gathered all these years from what I have learnt. Not only I stop after the work is done, but also I
-            tend to have reviews from peers, learn new modifications and try to improve the end product as much as I
-            can.</p>
-
+          <p>Researching, designing, implementing, and managing software programs. Testing and evaluating new programs. Identifying areas for modification and developing these modifications. Writing and implementing efficient code.</p>
+          <p>I have extensive experience in the software industry, working on various development projects using Java, HTML, CSS, C#, and C++. I enjoy building innovative solutions and continuously improving my work.</p>
         </div>
 
-        <a href="online.html"> <button class="buttons">Read More</button> </a>
+        <a href="online.html"><button class="buttons">Read More</button></a>
       </div>
 
       <div class="event-options">
-
         <a href="https://www.linkedin.com/in/saket-khopkar-336684198/">
-          <div class="box">
-            Linkedin Profile
-          </div>
+          <div class="box">LinkedIn Profile</div>
         </a>
         <a href="https://github.com/SAKET-SK">
-          <div class="box">
-            Github Profile
-          </div>
+          <div class="box">GitHub Profile</div>
         </a>
         <a href="team.html">
-          <div class="box">
-            Courses and Learnings
-          </div>
+          <div class="box">Courses and Learnings</div>
         </a>
-
       </div>
-    </div>
+    </section>
 
-    <!--Social Tab-->
-    <div class="social-section">
+    <section class="social-section">
       <div class="box">
         <div class="header">
-          <h1 class="first"> I</h1>
+          <h1 class="first">I</h1>
           <h1 class="second">AM</h1>
           <h1 class="third">SOCIAL</h1>
         </div>
         <div class="content">
-          <p>Make contact. Build relationships. Get results. Want to get in touch? I would like to hear from you too.
-            You can contact me regarding any suitable opportunity for me,
-            projects, or any queries.</p>
+          <p>Make contact. Build relationships. Get results. Want to get in touch? I would like to hear from you regarding any suitable opportunity, projects, or queries.</p>
         </div>
         <div class="icons">
-
-          <a href="https://twitter.com/saketkhopkar478?s=08"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.instagram.com/mystic.saket_910/?hl=en"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/saket-khopkar-336684198/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com/saketkhopkar478?s=08" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/mystic.saket_910/?hl=en" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/saket-khopkar-336684198/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Contact Us -->
-    <div class="landing-events contact" id="contactUS" name="contactUS">
+    <section class="landing-events contact" id="contactUS">
       <div class="text">
         <div class="title">
           <h1>Contact Me</h1>
@@ -177,42 +140,28 @@
         </div>
 
         <div class="descript">
-          <p>Want to get in touch? I would like to hear from you too. You can contact me regarding any suitable
-            opportunity for me,
-            projects, or any queries.</p>
+          <p>Want to get in touch? I would like to hear from you. Contact me regarding any suitable opportunities, projects, or queries.</p>
           <div class="address">
-            <div class="">
+            <div class="contact-item">
               <i class="far fa-envelope"></i>
               <p>saketkhopkar910@gmail.com</p>
             </div>
-            <div class="">
+            <div class="contact-item">
               <i class="fas fa-map-marker-alt"></i>
-              <p><a
-                  href="https://www.google.com/maps/place/Khopkar+Villa/@20.379281,78.117458,16.74z/data=!4m5!3m4!1s0x3bd3e9de45afa0d5:0x86f09ca265fee055!8m2!3d20.3786679!4d78.120793">Plot
-                  No
-                  17, Shastri Nagar, Shirey Layout, Behind Dattey College, Yavatmal , Maharashtra, 445001</a></p>
+              <p><a href="https://www.google.com/maps/place/Khopkar+Villa/@20.379281,78.117458,16.74z/data=!4m5!3m4!1s0x3bd3e9de45afa0d5:0x86f09ca265fee055!8m2!3d20.3786679!4d78.120793">Plot No 17, Shastri Nagar, Shirey Layout, Behind Dattey College, Yavatmal, Maharashtra, 445001</a></p>
             </div>
           </div>
         </div>
       </div>
+    </section>
+  </main>
 
-
+  <footer>
+    <div class="footer-section">
+      <span>&copy; 2021 <a href="https://www.linkedin.com/in/saket-khopkar-336684198/">Saket Khopkar</a></span>
+      <p>Developed and Maintained by Saket Khopkar</p>
     </div>
-
-
-    <!--Footer-->
-    <footer>
-      <div class="footer-section">
-        <span>Copyright © 2021<a href="https://www.linkedin.com/in/saket-khopkar-336684198/"> Saket Khopkar</a></span>
-        <p>Developed and Maintained by Saket Khopkar</p>
-      </div>
-    </footer>
-
-  </div>
-
-
-
-
+  </footer>
 
   <script src="scripts/nav.js"></script>
 </body>
