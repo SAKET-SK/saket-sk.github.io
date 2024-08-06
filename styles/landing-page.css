@@ -4,13 +4,14 @@
     padding-bottom: 175px;
     padding-left: 7%;
     padding-right: 7%;
-    background-image: url("/images/DigitalArt_Parallax.jpg") !important;
+    /* background-image: url("/images/DigitalArt_Parallax.jpg") !important; */
+    background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     color: white;
-    opacity: 70%;
+    /* opacity: 70%; */
 }
 .landing .title{
     margin-top: 150px;
@@ -726,6 +727,7 @@ footer a{
         padding: 10px 20px;
     }
 
+    
 
 
 }
