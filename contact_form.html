@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/2df9982f5a.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="icon" href="images/title_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/nav-style.css">
+    <link rel="stylesheet" href="styles/landing-page.css">
+    <link rel="stylesheet" href="styles/Root-HTML.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+              publicKey: "SVGG2rcl0GAtjc2D5",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                emailjs.sendForm('service_0z9ijp9', 'template_ng24h1n', this)
+                    .then(() => {
+                        alert('Thank you! Your message has been successfully sent!');
+                        this.reset();
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const nav = document.querySelector('nav');
+
+            mobileMenu.addEventListener('click', () => {
+                nav.classList.toggle('active');
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/name_logo.PNG" alt="Saket Khopkar's Logo">
+            </div>
+    
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="online.html">About Me</a></li>
+                    <li><a href="team.html">Knowledge Base</a></li>
+                    <li><a href="articles.html">Blog Posts</a></li>
+                    <li><a href="contact_form.html">Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="mobile-menu" aria-label="Mobile Menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <form id="contact-form" style="margin-top: 70px;">
+        <h4>Got any Queries? Ask Right Here</h4>
+    
+        <label for="emailID">Email ID</label>
+        <input type="text" placeholder="Enter your Email ID" id="emailID" name="senderEmail">
+
+        <label for="username">Name</label>
+        <input type="text" placeholder="Enter your Name" id="username" name="senderName">
+    
+        <label for="query">Your Query</label>
+        <input type="textarea" placeholder="Please elaborate your query" id="query" name="senderSubject">
+
+        <p style="text-align: center;">______________________________</p>
+    
+        <button type="submit">Send Message</button>
+        <br />
+        <button type="button" onclick="window.location.href='index.html'">Back to Home Page</button>
+    </form>
+</body>
+</html>
