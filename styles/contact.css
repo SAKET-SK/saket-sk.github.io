@@ -85,6 +85,7 @@ input:focus {
 
 ::placeholder {
     color: black;
+    font-weight: bold;
 }
 
 button {
@@ -102,13 +103,13 @@ button {
 }
 
 button:hover {
-    background: #629677;
+    background: #0dd85e;
     transition: all 0.50s ease;
 }
 
 button:focus {
     box-shadow: 0px 0px 0px 2px rgba(103, 110, 103, 0.71);
-    background: #629677;
+    background: #0dd85e;
 }
 
 .social-icons {
