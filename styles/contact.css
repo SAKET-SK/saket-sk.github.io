@@ -145,6 +145,12 @@ button:focus {
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
+    body {
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
     form {
         width: 90%;
         height: auto;
@@ -165,6 +171,12 @@ button:focus {
 }
 
 @media (max-width: 480px) {
+    body {
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
     form {
         width: 100%;
         height: auto;
