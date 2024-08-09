@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,6 +24,29 @@
         window.onload = function() {
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
+                
+                // Validate required fields
+                // Using trim() ensures that only meaningful input is considered during the validation process.
+                const emailID = document.getElementById('emailID').value.trim();
+                const username = document.getElementById('username').value.trim();
+                const query = document.getElementById('query').value.trim();
+                // If a user accidentally enters " " (just spaces) in the "Name" field, then:
+                // 1) Without trim(): The field would be considered filled, and the form would submit even though no meaningful data was provided.
+                // 2) With trim(): The field would be considered empty, and the form would not submit at all.
+                // This way, the user is notified about the required fields before submitting the form.
+                
+                // Validate email format
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;      // Email Regex pattern
+                if (!emailPattern.test(emailID)) {
+                    alert('Please enter a valid email address');
+                    return;
+                }
+
+
+                if (emailID === "" || username === "" || query === "") {
+                    alert('Fields marked with * are mandatory');
+                    return;
+                }
 
                 emailjs.sendForm('service_0z9ijp9', 'template_ng24h1n', this)
                     .then(() => {
@@ -74,14 +97,14 @@
     <form id="contact-form" style="margin-top: 70px;">
         <h4>Got any Queries? Ask Right Here</h4>
     
-        <label for="emailID">Email ID</label>
-        <input type="text" placeholder="Enter your Email ID" id="emailID" name="senderEmail">
+        <label for="emailID">Email ID <span style="color: red;">*</span></label>
+        <input type="text" placeholder="Enter your Email ID" id="emailID" name="senderEmail" required>
 
-        <label for="username">Name</label>
-        <input type="text" placeholder="Enter your Name" id="username" name="senderName">
+        <label for="username">Name <span style="color: red;">*</span></label>
+        <input type="text" placeholder="Enter your Name" id="username" name="senderName" required>
     
-        <label for="query">Your Query</label>
-        <input type="textarea" placeholder="Please elaborate your query" id="query" name="senderSubject">
+        <label for="query">Your Query <span style="color: red;">*</span></label>
+        <input type="textarea" placeholder="Please elaborate your query" id="query" name="senderSubject" required>
 
         <p style="text-align: center;">🌸🌸🌸🌸🌸🌸🌸🌸🌸</p>
     
