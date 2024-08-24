@@ -1,1 +1,3 @@
-A basic HTML CSS based portfolio website. The 2.0 enhanced version (which is underway currently as I am writing this) will have a bit more JavaScript.
+A basic HTML CSS-based portfolio website. The 2.0 enhanced version (currently underway as I write this) will have more JavaScript.
+<br/>
+Suggestions regarding improvements are welcome.
