@@ -1,302 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/event.css">
-    <link rel="stylesheet" href="styles/Root-HTML.css">
-    <link rel="stylesheet" href="styles/nav-style.css">
-    <link rel="stylesheet" href="styles/landing-page.css">
-    <link rel="stylesheet" href="styles/achievement.css">
-    <link rel="stylesheet" href="styles/team.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/event.css" />
+    <link rel="stylesheet" href="styles/Root-HTML.css" />
+    <link rel="stylesheet" href="styles/nav-style.css" />
+    <link rel="stylesheet" href="styles/landing-page.css" />
+    <link rel="stylesheet" href="styles/achievement.css" />
+    <link rel="stylesheet" href="styles/team.css" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-    <meta name="description"
-        content="Personal website of Saket Khopkar showcasing experience, projects, achievements, and recommendations.">
-    <meta name="keywords"
-        content="Saket Khopkar, projects, achievements, recommendations, experience, Java, MySQL, Web Development">
+    <meta
+      name="description"
+      content="Personal website of Saket Khopkar showcasing experience, projects, achievements, and recommendations."
+    />
+    <meta
+      name="keywords"
+      content="Saket Khopkar, projects, achievements, recommendations, experience, Java, MySQL, Web Development"
+    />
     <title>About Me</title>
-    <link rel="icon" href="images/title_logo.png" type="image/x-icon">
+    <link rel="icon" href="images/title_logo.png" type="image/x-icon" />
     <style>
-        p.achievement_para {
-            text-align: left;
+      p.achievement_para {
+        text-align: left;
+      }
+
+      .about-section img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+
+      @media screen and (max-width: 768px) {
+        .nav-container ul {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .about-section {
+          text-align: center;
         }
 
         .about-section img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
+          width: 100px;
+          height: 100px;
         }
 
-        @media screen and (max-width: 768px) {
-            .nav-container ul {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .about-section {
-                text-align: center;
-            }
-
-            .about-section img {
-                width: 100px;
-                height: 100px;
-            }
-
-            .event img {
-                width: 100%;
-                height: auto;
-            }
+        .event img {
+          width: 100%;
+          height: auto;
         }
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-        <div class="logo">
-            <img src="images/New-Logo.PNG" alt="Saket Khopkar's Logo">
-        </div>
+      <div class="logo">
+        <img src="images/New-Logo.PNG" alt="Saket Khopkar's Logo" />
+      </div>
 
-        <div class="nav-container">
-            <ul class="nav-links">
-                <li><a href="index.html" aria-label="Home">Home</a></li>
-                <li><a href="online.html" aria-label="About Me">About Me</a></li>
-                <li><a href="team.html" aria-label="Knowledge Base">Knowledge Base</a></li>
-                <li><a href="articles.html" aria-label="Blog Posts">Blog Posts</a></li>
-                <li><a href="contact_form.html" aria-label="Contact">Contact</a></li>
-            </ul>
-        </div>
+      <div class="nav-container">
+        <ul class="nav-links">
+          <li><a href="index.html" aria-label="Home">Home</a></li>
+          <li><a href="online.html" aria-label="About Me">About Me</a></li>
+          <li>
+            <a href="team.html" aria-label="Knowledge Base">Knowledge Base</a>
+          </li>
+          <li>
+            <a href="articles.html" aria-label="Blog Posts">Blog Posts</a>
+          </li>
+          <li><a href="contact_form.html" aria-label="Contact">Contact</a></li>
+        </ul>
+      </div>
 
-        <div class="mobile-menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
     </nav>
 
     <div class="about-section">
-        <p>I solve problems in a bit creative way. During my tenure as a Diploma student, where I completed my junior
-            engineering years, I have learned many classical strategies that we can apply to modern-day projects which
-            are helpful in solving many real-world problems.
-            Additional experience as a Java Programmer and MySQL Backend Developer taught me to analyze problems and
-            solve them in a creative way.
-            An active learner, ready to learn new technologies and embrace them happily.</p>
-        <p>I have a team-building approach and I tend to work more creatively in a team as well as enjoying every moment
-            of work spent along with them.</p>
-        <p><b>Scroll Down to view my exquisite collection of projects!!</b></p>
-        <p> Reach me out at saketkhopkar910@gmail.com </p>
+      <p>
+        I solve problems in a bit creative way. During my tenure as a Diploma
+        student, where I completed my junior engineering years, I have learned
+        many classical strategies that we can apply to modern-day projects which
+        are helpful in solving many real-world problems. Additional experience
+        as a Java Programmer and MySQL Backend Developer taught me to analyze
+        problems and solve them in a creative way. An active learner, ready to
+        learn new technologies and embrace them happily.
+      </p>
+      <p>
+        I have a team-building approach and I tend to work more creatively in a
+        team as well as enjoying every moment of work spent along with them.
+      </p>
+      <p><b>Scroll Down to view my exquisite collection of projects!!</b></p>
+      <p>Reach me out at saketkhopkar910@gmail.com</p>
     </div>
 
     <section class="past">
-        <div class="past-events">
-            <div class="first-box">
-                <div class="text">
-                    <div class="title">
-                        <h1>Work Experience</h1>
-                        <div class="line"></div>
-                    </div>
-                </div>
-                <div class="online-events row">
-                    <div class="event">
-                        <a href="Supporting HTML Pages/dsp-3.html">
-                            <img src="images/axiom-image.png" height="400px" width="330px"
-                                alt="Axiom TechGuru Pvt. Ltd. - May 2018 to June 2018">
-                            <p> Axiom TechGuru Pvt. Ltd. </p>
-                            <marquee style="text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;">Click to
-                                view details</marquee>
-                            <br />
-                            <span>Date : May 2018 - June 2018</span>
-                        </a>
-                    </div>
-                    <div class="event">
-                        <a href="Supporting HTML Pages/dsp-2.html">
-                            <img src="images/verzeo-image.png" height="400px" width="330px"
-                                alt="Verzeo EduTech - September 2020 to November 2020">
-                            <p> Verzeo EduTech </p>
-                            <marquee style="text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;">Click to
-                                view details</marquee>
-                            <br />
-                            <span>Date : September 2020 - November 2020</span>
-                        </a>
-                    </div>
-                    <div class="event">
-                        <a href="Supporting HTML Pages/dsp-1.html">
-                            <img src="images/firstbit-image.jfif" height="400px" width="330px"
-                                alt="FirstBit Solutions Pvt. Ltd. - May 2018 to June 2018">
-                            <p> FirstBit Solutions Pvt. Ltd. </p>
-                            <marquee style="text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;">Click to
-                                view details</marquee>
-                            <br />
-                            <span>Date : Oct 2023 - May 2024</span>
-                        </a>
-                    </div>
-
-                    <div class="event">
-                        <a href="Supporting HTML Pages/dsp.html">
-                            <img src="images/omfys-image.png" height="400px" width="330px"
-                                alt="OMFYS Technologies Pvt. Ltd. - July 2024 to Present">
-                            <p> OMFYS Technologies Pvt. Ltd. </p>
-                            <marquee style="text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;">Click to
-                                view details</marquee>
-                            <br />
-                            <span>Date : July 2024 - Present</span>
-                        </a>
-                    </div>
-
-                </div>
+      <div class="past-events">
+        <div class="first-box">
+          <div class="text">
+            <div class="title">
+              <h1>Work Experience</h1>
+              <div class="line"></div>
             </div>
-            <div class="first-box">
-                <div class="text">
-                    <div class="title">
-                        <h1>Projects</h1>
-                        <div class="line"></div>
-                    </div>
-                </div>
-                <div class="online-events row">
-                    <div class="event">
-                        <a href="Supporting HTML Pages/dsp-11.html">
-                            <img src="images/project-img.jpg" height="400px" width="330px"
-                                alt="Vehicle Data Analytics - July 2021 to April 2022">
-                            <p> Vehicle Data Analytics </p>
-                            <marquee style="text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;">Click to
-                                view details</marquee>
-                            <br />
-                            <span>Date : July 2021 - April 2022</span>
-                        </a>
-                    </div>
-                    <div class="event">
-                        <a href="Supporting HTML Pages/dsp-5.html">
-                            <img src="images/project-2.jfif" height="400px" width="330px"
-                                alt="The Ultimate FPS Game - May to August 2021">
-                            <p> The Ultimate FPS Game </p>
-                            <marquee style="text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;">Click to
-                                view details</marquee>
-                            <br />
-                            <span>Date : May - August 2021</span>
-                        </a>
-                    </div>
-                    <div class="event">
-                        <a href="Supporting HTML Pages/dsp-6.html">
-                            <img src="images/project-3.jfif" height="400px" width="330px"
-                                alt="Interior Designer's Website - August to November 2020">
-                            <p> Interior Designer's Website </p>
-                            <marquee style="text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;">Click to
-                                view details</marquee>
-                            <br />
-                            <span>Date : August - November 2020</span>
-                        </a>
-                    </div>
-                    <div class="event">
-                        <a href="Supporting HTML Pages/dsp-7.html">
-                            <img src="images/project-4.jfif" height="400px" width="330px"
-                                alt="Pathology Management System - July to August 2021">
-                            <p> Pathology Management System</p>
-                            <marquee style="text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;">Click to
-                                view details</marquee>
-                            <br />
-                            <span>Date : July - August 2021</span>
-                        </a>
-                    </div>
-                    <div class="event">
-                        <a href="Supporting HTML Pages/dsp-8.html">
-                            <img src="images/project-5.jfif" height="400px" width="330px"
-                                alt="Landing Page for TECC - March to April 2021">
-                            <p> Landing Page for TECC </p>
-                            <marquee style="text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;">Click to
-                                view details</marquee>
-                            <br />
-                            <span>Date : March - April 2021</span>
-                        </a>
-                    </div>
-                    <div class="event">
-                        <a href="Supporting HTML Pages/dsp-10.html">
-                            <img src="images/project-7.jfif" height="400px" width="330px"
-                                alt="Electronics E-Commerce Website - December 2019 to June 2020">
-                            <p> Electronics E-Commerce Website</p>
-                            <marquee style="text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;">Click to
-                                view details</marquee>
-                            <br />
-                            <span>Date : December 2019 - June 2020</span>
-                        </a>
-                    </div>
-                </div>
+          </div>
+          <div class="online-events row">
+            <div class="event">
+              <a href="Supporting HTML Pages/dsp-3.html">
+                <img
+                  src="images/axiom-image.png"
+                  height="400px"
+                  width="330px"
+                  alt="Axiom TechGuru Pvt. Ltd. - May 2018 to June 2018"
+                />
+                <p>Axiom TechGuru Pvt. Ltd.</p>
+                <marquee
+                  style="
+                    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00,
+                      0 0 15px #00ff00;
+                  "
+                  >Click to view details</marquee
+                >
+                <br />
+                <span>Date : May 2018 - June 2018</span>
+              </a>
             </div>
+            <div class="event">
+              <a href="Supporting HTML Pages/dsp-2.html">
+                <img
+                  src="images/verzeo-image.png"
+                  height="400px"
+                  width="330px"
+                  alt="Verzeo EduTech - September 2020 to November 2020"
+                />
+                <p>Verzeo EduTech</p>
+                <marquee
+                  style="
+                    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00,
+                      0 0 15px #00ff00;
+                  "
+                  >Click to view details</marquee
+                >
+                <br />
+                <span>Date : September 2020 - November 2020</span>
+              </a>
+            </div>
+            <div class="event">
+              <a href="Supporting HTML Pages/dsp-1.html">
+                <img
+                  src="images/firstbit-image.jfif"
+                  height="400px"
+                  width="330px"
+                  alt="FirstBit Solutions Pvt. Ltd. - May 2018 to June 2018"
+                />
+                <p>FirstBit Solutions Pvt. Ltd.</p>
+                <marquee
+                  style="
+                    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00,
+                      0 0 15px #00ff00;
+                  "
+                  >Click to view details</marquee
+                >
+                <br />
+                <span>Date : Oct 2023 - May 2024</span>
+              </a>
+            </div>
+
+            <div class="event">
+              <a href="Supporting HTML Pages/dsp.html">
+                <img
+                  src="images/omfys-image.png"
+                  height="400px"
+                  width="330px"
+                  alt="OMFYS Technologies Pvt. Ltd. - July 2024 to Present"
+                />
+                <p>OMFYS Technologies Pvt. Ltd.</p>
+                <marquee
+                  style="
+                    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00,
+                      0 0 15px #00ff00;
+                  "
+                  >Click to view details</marquee
+                >
+                <br />
+                <span>Date : July 2024 - Present</span>
+              </a>
+            </div>
+          </div>
         </div>
+        <div class="first-box">
+          <div class="text">
+            <div class="title">
+              <h1>Projects</h1>
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="online-events row">
+            <div class="event">
+              <a href="Supporting HTML Pages/dsp-11.html">
+                <img
+                  src="images/project-img.jpg"
+                  height="400px"
+                  width="330px"
+                  alt="Vehicle Data Analytics - July 2021 to April 2022"
+                />
+                <p>Vehicle Data Analytics</p>
+                <marquee
+                  style="
+                    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00,
+                      0 0 15px #00ff00;
+                  "
+                  >Click to view details</marquee
+                >
+                <br />
+                <span>Date : July 2021 - April 2022</span>
+              </a>
+            </div>
+            <div class="event">
+              <a href="Supporting HTML Pages/dsp-5.html">
+                <img
+                  src="images/project-2.jfif"
+                  height="400px"
+                  width="330px"
+                  alt="The Ultimate FPS Game - May to August 2021"
+                />
+                <p>The Ultimate FPS Game</p>
+                <marquee
+                  style="
+                    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00,
+                      0 0 15px #00ff00;
+                  "
+                  >Click to view details</marquee
+                >
+                <br />
+                <span>Date : May - August 2021</span>
+              </a>
+            </div>
+            <div class="event">
+              <a href="Supporting HTML Pages/dsp-6.html">
+                <img
+                  src="images/project-3.jfif"
+                  height="400px"
+                  width="330px"
+                  alt="Interior Designer's Website - August to November 2020"
+                />
+                <p>Interior Designer's Website</p>
+                <marquee
+                  style="
+                    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00,
+                      0 0 15px #00ff00;
+                  "
+                  >Click to view details</marquee
+                >
+                <br />
+                <span>Date : August - November 2020</span>
+              </a>
+            </div>
+            <div class="event">
+              <a href="Supporting HTML Pages/dsp-7.html">
+                <img
+                  src="images/project-4.jfif"
+                  height="400px"
+                  width="330px"
+                  alt="Pathology Management System - July to August 2021"
+                />
+                <p>Pathology Management System</p>
+                <marquee
+                  style="
+                    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00,
+                      0 0 15px #00ff00;
+                  "
+                  >Click to view details</marquee
+                >
+                <br />
+                <span>Date : July - August 2021</span>
+              </a>
+            </div>
+            <div class="event">
+              <a href="Supporting HTML Pages/dsp-8.html">
+                <img
+                  src="images/project-5.jfif"
+                  height="400px"
+                  width="330px"
+                  alt="Landing Page for TECC - March to April 2021"
+                />
+                <p>Landing Page for TECC</p>
+                <marquee
+                  style="
+                    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00,
+                      0 0 15px #00ff00;
+                  "
+                  >Click to view details</marquee
+                >
+                <br />
+                <span>Date : March - April 2021</span>
+              </a>
+            </div>
+            <div class="event">
+              <a href="Supporting HTML Pages/dsp-10.html">
+                <img
+                  src="images/project-7.jfif"
+                  height="400px"
+                  width="330px"
+                  alt="Electronics E-Commerce Website - December 2019 to June 2020"
+                />
+                <p>Electronics E-Commerce Website</p>
+                <marquee
+                  style="
+                    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00,
+                      0 0 15px #00ff00;
+                  "
+                  >Click to view details</marquee
+                >
+                <br />
+                <span>Date : December 2019 - June 2020</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <div class="first-box">
-        <div class="text">
-            <div class="title">
-                <h1>Achievements</h1>
-                <div class="line"></div>
-            </div>
+      <div class="text">
+        <div class="title">
+          <h1>Achievements</h1>
+          <div class="line"></div>
         </div>
-        <div class="team-container">
-            <div class="box">
-                <div class="img-box">
-                    <img src="images/achievement_img.jfif" alt="Achievement Image">
-                </div>
-                <p class="achievement_para">
-                    <i class="fas fa-trophy"></i> Certified as a hardworking intern at Axiom TechGuru Pvt Ltd for
-                    intense focus and willingness to create new applications. <br />
-                    <i class="fas fa-certificate"></i> Completed a course on Six Sigma White Belt in Information
-                    Technology...<br />
-                    <i class="fas fa-graduation-cap"></i> Completed various basic IBM Certifications...<br />
-                    <i class="fas fa-paint-brush"></i> Actively Participated in various inter college events like Poster
-                    Presentation...<br />
-                    <i class="fas fa-gamepad"></i> Participation and felicitation in various inter college Gaming
-                    events...<br />
-                </p>
-            </div>
+      </div>
+      <div class="team-container">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/achievement_img.jfif" alt="Achievement Image" />
+          </div>
+          <p class="achievement_para">
+            <i class="fas fa-trophy"></i> Certified as a hardworking intern at
+            Axiom TechGuru Pvt Ltd for intense focus and willingness to create
+            new applications. <br />
+            <i class="fas fa-certificate"></i> Completed a course on Six Sigma
+            White Belt in Information Technology...<br />
+            <i class="fas fa-graduation-cap"></i> Completed various basic IBM
+            Certifications...<br />
+            <i class="fas fa-paint-brush"></i> Actively Participated in various
+            inter college events like Poster Presentation...<br />
+            <i class="fas fa-gamepad"></i> Participation and felicitation in
+            various inter college Gaming events...<br />
+          </p>
         </div>
+      </div>
     </div>
 
     <div class="first-box">
-        <div class="text">
-            <div class="title">
-                <h1>Recommendations</h1>
-                <div class="line"></div>
-            </div>
+      <div class="text">
+        <div class="title">
+          <h1>Recommendations</h1>
+          <div class="line"></div>
         </div>
-        <div class="team-container">
-            <div class="box">
-                <div class="img-box">
-                    <img src="images/rec.jfif" alt="Recommendation from Dhanshri Rajput">
-                </div>
-                <p>A quick learner, he is progressing quickly with his skillsets. He is truly a hardworking guy and has
-                    core fundamental knowledge in Programming skills with Python & Java. He already has knowledge of
-                    Responsive Web Development. He is a team builder, who has had experience leading teams in a few
-                    projects. He is an interesting person to work with!</p>
-                <h4>Dhanshri Rajput <br><span> Software Engineer / Project Collaborator in I2IT</span></h4>
-            </div>
+      </div>
+      <div class="recommendations-intro">
+        <span>The trust of people I've worked with...</span>
+      </div>
+      <div class="team-container">
+        <div class="box">
+          <p>
+            A quick learner, he is progressing quickly with his skillsets. He is
+            truly a hardworking guy and has <strong>core fundamental knowledge in
+            Programming skills with Python & Java.</strong> He already has knowledge of
+            <strong>Responsive Web Development.</strong> He is a team builder, who has <strong>had
+            experience leading teams in a few projects.</strong> He is an interesting
+            person to work with!
+          </p>
+          <h4>
+            Dhanshri Rajput <br /><span>
+              Software Engineer / Project Collaborator in I2IT</span
+            >
+          </h4>
+        </div>
 
-            <div class="box">
-                <div class="img-box">
+        <div class="box">
+          <!-- <div class="img-box">
                     <img src="images/axiom-image.png" alt="Recommendation from Ms. R Farah Hussain">
-                </div>
-                <p>He worked in our organization and it was found that he possessed good knowledge in Java Programming
-                    as well as MySQL Backend development. Saket is truly hardworking, reliable and getting professional
-                    with each bit of training. Wishing him all the best for future endeavors.
-                </p>
-                <h4>Ms. R Farah Hussain <br><span>Business Analyst, Axiom TechGuru Pvt. Ltd.</span></h4>
-            </div>
+                </div> -->
+          <p>
+            He worked in our organization and it was found that he possessed
+            <strong>good knowledge in Java Programming as well as MySQL Backend
+            development.</strong> Saket is truly hardworking, reliable and getting
+            professional with each bit of training. Wishing him all the best for
+            future endeavors.
+          </p>
+          <h4>
+            Ms. R Farah Hussain <br /><span
+              >Business Analyst, Axiom TechGuru Pvt. Ltd.</span
+            >
+          </h4>
         </div>
+      </div>
     </div>
 
     <footer>
-        <div class="footer-section">
-            <p>Connect with me:</p>
-            <a href="https://www.linkedin.com/in/saket-khopkar-336684198/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/saketkhopkar" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
-            <p>&copy; <script>document.write(new Date().getFullYear())</script> <a href="https://www.linkedin.com/in/saket-khopkar-336684198/" target="_blank" rel="noopener noreferrer">Saket Khopkar</a></p>
-            <p>Developed and Maintained by Saket Khopkar</p>
-        </div>
+      <div class="footer-section">
+        <p>Connect with me:</p>
+        <a
+          href="https://www.linkedin.com/in/saket-khopkar-336684198/"
+          target="_blank"
+          aria-label="LinkedIn Profile"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="https://github.com/saketkhopkar"
+          target="_blank"
+          aria-label="GitHub Profile"
+          ><i class="fab fa-github"></i
+        ></a>
+        <p>
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          <a
+            href="https://www.linkedin.com/in/saket-khopkar-336684198/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Saket Khopkar</a
+          >
+        </p>
+        <p>Developed and Maintained by Saket Khopkar</p>
+      </div>
     </footer>
 
     <script src="scripts/nav.js"></script>
-</body>
-
+  </body>
 </html>

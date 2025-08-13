@@ -1,270 +1,295 @@
 body {
-    padding-top: 100px;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: white;
+  padding-top: 100px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: white;
 }
 
 .img-box {
-    width: 50%;
+  width: 50%;
 }
 
 .img-box img {
-    width: 100%;
+  width: 100%;
 }
 
 .team-container {
-    padding-left: 7%;
-    padding-right: 7%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 80px;
-    box-sizing: border-box;
-    padding: 20px;
+  padding-left: 7%;
+  padding-right: 7%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 80px;
+  box-sizing: border-box;
+  padding: 20px;
 }
 
 .team-container .box {
-    position: relative;
-    padding: 80px 40px 40px;
-    width: 100%;
-    transition: 0.5s;
-    text-align: center;
-    background: #f5f5f5;
-    box-shadow: 6px 6px 12px rgba(0, 0, 0, .15), -6px -6px 12px rgba(255, 255, 255, .1);
+  position: relative;
+  padding: 80px 40px 40px;
+  width: 100%;
+  transition: 0.5s;
+  text-align: center;
+  background: #f5f5f5;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15),
+    -6px -6px 12px rgba(255, 255, 255, 0.1);
 }
 
 .team-container .box:hover {
-    background: var(--primary);
-    color: #fff;
+  background: var(--primary);
+  color: #fff;
 }
 
 .team-container .box p {
-    margin: 0;
-    padding: 0;
-    transition: 0.5s;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
 }
 
 .team-container .box h4 {
-    margin: 20px 0 0;
-    padding: 0;
-    transition: 0.5s;
-    font-size: 18px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: black;
+  margin: 20px 0 0;
+  padding: 0;
+  transition: 0.5s;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: black;
 }
 
 .team-container .box h4:hover {
-    color: #fff;
+  color: black;
 }
 
 .team-container .box h4 span {
-    font-weight: 700;
-    font-size: 14px;
-    color: black;
-    transition: 0.5s;
-}
-
-.team-container .box h4 span:hover {
-    color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  color: black;
+  transition: 0.5s;
 }
 
 .team-container .box .img-box {
-    position: absolute;
-    top: -60px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
-    height: 120px;
-    margin: 0 auto;
-    border-radius: 70%;
-    overflow: hidden;
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  border-radius: 70%;
+  overflow: hidden;
+}
 
+.recommendations-intro span {
+  font-size: 2.2rem; /* Bigger for emphasis */
+  color: #ff9800; /* Highlight color */
+}
+
+.recommendations-intro a {
+  color: #0077b5; /* LinkedIn blue */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.recommendations-intro a:hover {
+  text-decoration: underline;
+}
+
+.recommendations-intro {
+  font-size: 1.8rem; /* Make it big */
+  font-weight: bold;
+  /* text-align: center; */
+  margin: 2rem 0;
+  color: var(--primary); /* Uses your site's primary color */
+}
+
+.team-container .box strong {
+  color: var(--primary);
+  font-weight: bold;
+  transition: color 0.3s ease; /* smooth change */
+}
+
+.team-container .box:hover strong{
+  color: #fff;
 }
 
 .second-box .title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .second-box h1 {
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 10px;
-    color: var(--primary);
-    font-size: 52px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  color: var(--primary);
+  font-size: 52px;
 }
 
 .second-box .title .line {
-    margin-bottom: 30px;
-    position: relative;
-    height: 5px;
-    width: max(100px, 20%);
-    background-color: #FFE000;
+  margin-bottom: 30px;
+  position: relative;
+  height: 5px;
+  width: max(100px, 20%);
+  background-color: #ffe000;
 }
 
 .profiles {
-
-    padding-right: 7%;
-    padding-left: 7%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  padding-right: 7%;
+  padding-left: 7%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .profile {
-    width: max(20%, 200px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5% 2%;
+  width: max(20%, 200px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% 2%;
 }
 
 .profile .profile-img {
-    height: 160px;
-    width: 160px;
-    border-radius: 50%;
-    filter: grayscale(100%);
-    cursor: pointer;
-    transition: 400ms;
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: 400ms;
 }
 
 .profile:hover .profile-img {
-    filter: grayscale(0);
+  filter: grayscale(0);
 }
 
 .profile img {
-    width: 100%;
+  width: 100%;
 }
 
 .user-name {
-    font-size: 18px;
-    text-align: center;
-    color: var(--primary);
+  font-size: 18px;
+  text-align: center;
+  color: var(--primary);
 }
 
 .profile h5 {
-    font-size: 18px;
-    font-weight: 100;
-    text-align: center;
-    margin-top: 1px;
+  font-size: 18px;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 1px;
 }
 
 .first-box .text {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 70px;
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  text-align: center;
 }
 
 .first-box {
-    padding-left: 7%;
-    padding-right: 7%;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
 .first-box .title h1 {
-    font-size: 70px;
-    font-weight: 500;
-    color: var(--primary);
-
+  font-size: 70px;
+  font-weight: 500;
+  color: var(--primary);
 }
 
 .first-box .line {
-    margin-bottom: 30px;
-    position: relative;
-    height: 5px;
-    width: max(100px, 100%);
-    background-color: #FFE000;
+  margin-bottom: 30px;
+  position: relative;
+  height: 5px;
+  width: max(100px, 100%);
+  background-color: #ffe000;
 }
 
 .tooltip {
-    position: relative;
-    display: inline-block;
-    padding-left: 20px;
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
 }
 
 .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 110%;
-    /* Position the tooltip above the image */
-    left: 50%;
-    margin-left: -50px;
-    /* Use half of the tooltip width to center it */
-    opacity: 0;
-    transition: opacity 0.3s;
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  /* Position the tooltip above the image */
+  left: 50%;
+  margin-left: -50px;
+  /* Use half of the tooltip width to center it */
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
+@media screen and (max-width: 770px) {
+  .body {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
 
-@media screen and (max-width:770px) {
-    .body {
-        padding-left: 0%;
-        padding-right: 0%;
-    }
+  .team-container .box {
+    margin-bottom: 50px;
+  }
 
-    .team-container .box {
-        margin-bottom: 50px;
-    }
+  .first-box {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
 
-    .first-box {
-        padding-left: 1%;
-        padding-right: 1%;
-    }
+  .first-box .title {
+    width: 100%;
+    text-align: center;
+  }
 
-    .first-box .title {
-        width: 100%;
-        text-align: center;
-    }
+  .first-box .title h1 {
+    font-size: 50px;
+  }
 
-    .first-box .title h1 {
-        font-size: 50px;
-    }
+  .profile {
+    width: 40%;
+  }
 
-    .profile {
-        width: 40%;
-    }
+  .profile .profile-img {
+    height: 120px;
+    width: 120px;
+  }
 
-    .profile .profile-img {
-        height: 120px;
-        width: 120px;
-        
-    }
+  .profile .user-name {
+    font-size: 14px;
+  }
 
-    .profile .user-name {
-        font-size: 14px;
-    }
+  .profile h5 {
+    font-size: 12px;
+  }
 
-    .profile h5 {
-        font-size: 12px;
-    }
+  .second-box h1 {
+    font-size: 30px;
+  }
 
-    .second-box h1 {
-        font-size: 30px;
-    }
-
-    .first-box .line,
-    .second-box .line {
-        display: none;
-    }
+  .first-box .line,
+  .second-box .line {
+    display: none;
+  }
 }
 
-@media screen and (max-width:430px) {
-    .team-container {
-        grid-template-columns: 1fr;
-    }
+@media screen and (max-width: 430px) {
+  .team-container {
+    grid-template-columns: 1fr;
+  }
 }
