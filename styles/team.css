@@ -53,14 +53,22 @@ body {
     font-size: 18px;
     line-height: 20px;
     text-transform: uppercase;
-    color: var(--primary);
+    color: black;
+}
+
+.team-container .box h4:hover {
+    color: #fff;
 }
 
 .team-container .box h4 span {
     font-weight: 700;
     font-size: 14px;
-    color: var(--primary);
+    color: black;
     transition: 0.5s;
+}
+
+.team-container .box h4 span:hover {
+    color: #fff;
 }
 
 .team-container .box .img-box {
